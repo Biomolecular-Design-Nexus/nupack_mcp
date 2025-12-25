@@ -1,0 +1,26 @@
+{
+  "_description": "Configuration for structure prediction",
+  "_source": "Extracted from examples/use_case_2_structure_prediction.py",
+
+  "model": {
+    "material": "RNA",
+    "temperature": 37.0
+  },
+
+  "prediction": {
+    "energy_gap": 5.0,
+    "max_suboptimal": 10,
+    "probability_threshold": 0.5
+  },
+
+  "output": {
+    "format": "json",
+    "include_metadata": true,
+    "include_probabilities": true
+  },
+
+  "defaults": {
+    "sequence": "GGCCAATTCCGG",
+    "output_file": "results/structure_prediction.json"
+  }
+}

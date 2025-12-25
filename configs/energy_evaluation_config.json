@@ -1,0 +1,37 @@
+{
+  "_description": "Configuration for energy evaluation",
+  "_source": "Extracted from examples/use_case_5_energy_evaluation.py",
+
+  "model": {
+    "material": "RNA",
+    "temperature": 37.0,
+    "parameter_file": "examples/data/parameters/rna99.json"
+  },
+
+  "analysis": {
+    "landscape_analysis": false,
+    "landscape_size": 20,
+    "sensitivity_analysis": false,
+    "temp_range": [25, 80, 5]
+  },
+
+  "parameters": {
+    "stack_energy_gc": -3.0,
+    "stack_energy_au": -1.5,
+    "loop_penalty": 4.2,
+    "terminal_penalty": 0.8,
+    "mismatch_penalty": 2.5
+  },
+
+  "output": {
+    "format": "json",
+    "include_metadata": true,
+    "include_components": true
+  },
+
+  "defaults": {
+    "sequence": "GGCCAATTCCGG",
+    "structure": "((((....))))",
+    "output_file": "results/energy_evaluation.json"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "test_date": "2025-12-25T06:20:53.638373",
+  "server_name": "NUPACK",
+  "tests": {
+    "server_startup": {
+      "status": "passed",
+      "timestamp": "2025-12-25T06:20:54.593534",
+      "details": {
+        "server_name": "NUPACK"
+      }
+    },
+    "mcp_wrapper_thermodynamics": {
+      "status": "passed",
+      "timestamp": "2025-12-25T06:20:54.926302",
+      "details": {
+        "sequences_analyzed": 2,
+        "has_status": true
+      }
+    },
+    "mcp_wrapper_structure": {
+      "status": "passed",
+      "timestamp": "2025-12-25T06:20:54.926905",
+      "details": {
+        "sequence_length": 18,
+        "has_mfe_structure": true
+      }
+    },
+    "mcp_wrapper_design": {
+      "status": "passed",
+      "timestamp": "2025-12-25T06:20:54.927555",
+      "details": {
+        "num_designs": 3,
+        "target_length": 12
+      }
+    },
+    "mcp_wrapper_complex": {
+      "status": "passed",
+      "timestamp": "2025-12-25T06:20:55.228097",
+      "details": {
+        "num_strands": 2,
+        "num_complexes": 5
+      }
+    },
+    "mcp_wrapper_energy": {
+      "status": "passed",
+      "timestamp": "2025-12-25T06:20:55.229500",
+      "details": {
+        "sequence_length": 12,
+        "num_base_pairs": 4
+      }
+    },
+    "job_manager": {
+      "status": "passed",
+      "timestamp": "2025-12-25T06:20:55.231166",
+      "details": {
+        "job_id": "74c46afa",
+        "can_submit": true,
+        "can_check_status": true,
+        "can_list_jobs": true,
+        "total_jobs": 3
+      }
+    },
+    "error_handling": {
+      "status": "passed",
+      "timestamp": "2025-12-25T06:20:55.231203",
+      "details": {
+        "properly_raises_file_not_found": true
+      }
+    },
+    "real_world_workflow": {
+      "status": "passed",
+      "timestamp": "2025-12-25T06:20:55.231381",
+      "details": {
+        "thermodynamics_completed": true,
+        "structure_prediction_completed": true,
+        "sequence_length": 12
+      }
+    }
+  },
+  "issues": [],
+  "summary": {
+    "total_tests": 9,
+    "passed": 9,
+    "failed": 0,
+    "pass_rate": "100.0%"
+  }
+}

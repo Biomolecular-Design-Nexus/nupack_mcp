@@ -1,0 +1,29 @@
+{
+  "_description": "Configuration for complex equilibrium analysis",
+  "_source": "Extracted from examples/use_case_4_complex_equilibrium.py",
+
+  "model": {
+    "material": "DNA",
+    "temperature": 37.0,
+    "max_complex_size": 2
+  },
+
+  "analysis": {
+    "concentrations": [1e-6, 1e-6],
+    "thermal_scan": false,
+    "temp_range": [25, 75, 5],
+    "stoichiometry_ratios": [0.1, 0.5, 1.0, 2.0, 10.0]
+  },
+
+  "output": {
+    "format": "json",
+    "include_metadata": true,
+    "include_thermal": true,
+    "plotting_enabled": false
+  },
+
+  "defaults": {
+    "strands": ["ATCGATCGATCG", "CGAUCGAUCGAU"],
+    "output_file": "results/complex_equilibrium.json"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "test_date": "2025-12-25T06:18:25.673274",
+  "server_name": "NUPACK",
+  "tests": {
+    "server_startup": {
+      "status": "passed",
+      "timestamp": "2025-12-25T06:18:25.673291",
+      "details": {
+        "server_name": "NUPACK"
+      }
+    },
+    "sync_tool_thermodynamics": {
+      "status": "failed",
+      "timestamp": "2025-12-25T06:18:26.009081",
+      "details": {
+        "error": "Missing status in result"
+      }
+    },
+    "sync_tool_structure": {
+      "status": "failed",
+      "timestamp": "2025-12-25T06:18:26.011990",
+      "details": {
+        "error": "Missing status in result"
+      }
+    },
+    "sync_tool_design": {
+      "status": "failed",
+      "timestamp": "2025-12-25T06:18:26.014498",
+      "details": {
+        "error": "Missing status in result"
+      }
+    },
+    "sync_tool_complex_equilibrium": {
+      "status": "failed",
+      "timestamp": "2025-12-25T06:18:26.336220",
+      "details": {
+        "error": "Missing status in result"
+      }
+    },
+    "sync_tool_energy": {
+      "status": "failed",
+      "timestamp": "2025-12-25T06:18:26.339541",
+      "details": {
+        "error": "Sequence and structure must have same length"
+      }
+    },
+    "submit_workflow": {
+      "status": "passed",
+      "timestamp": "2025-12-25T06:18:28.341412",
+      "details": {
+        "job_id": "aea72599",
+        "final_status": "pending",
+        "has_logs": true
+      }
+    },
+    "job_management": {
+      "status": "passed",
+      "timestamp": "2025-12-25T06:18:28.342050",
+      "details": {
+        "can_list_jobs": true,
+        "current_jobs": 2
+      }
+    },
+    "error_handling": {
+      "status": "passed",
+      "timestamp": "2025-12-25T06:18:28.342148",
+      "details": {
+        "handles_exceptions": true,
+        "exception_type": "FileNotFoundError"
+      }
+    }
+  },
+  "issues": [],
+  "summary": {
+    "total_tests": 9,
+    "passed": 4,
+    "failed": 5,
+    "pass_rate": "44.4%"
+  }
+}

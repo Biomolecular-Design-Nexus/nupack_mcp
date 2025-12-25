@@ -1,0 +1,35 @@
+{
+  "_description": "Configuration for sequence design",
+  "_source": "Extracted from examples/use_case_3_sequence_design.py",
+
+  "model": {
+    "material": "DNA",
+    "temperature": 37.0
+  },
+
+  "design": {
+    "num_designs": 5,
+    "max_attempts": 1000,
+    "defects_threshold": 2,
+    "gc_content_range": [0.3, 0.7]
+  },
+
+  "optimization": {
+    "score_weights": {
+      "defects": 1.0,
+      "gc_content": 0.5,
+      "complexity": 0.3
+    }
+  },
+
+  "output": {
+    "format": "json",
+    "include_metadata": true,
+    "rank_by_score": true
+  },
+
+  "defaults": {
+    "target_structure": "((((....))))",
+    "output_file": "results/sequence_design.json"
+  }
+}

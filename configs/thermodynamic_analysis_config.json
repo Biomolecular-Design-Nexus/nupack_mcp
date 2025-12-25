@@ -1,0 +1,27 @@
+{
+  "_description": "Configuration for thermodynamic analysis",
+  "_source": "Extracted from examples/use_case_1_thermodynamics.py",
+
+  "model": {
+    "material": "DNA",
+    "temperature": 37.0,
+    "parameter_file": "examples/data/parameters/dna04.json"
+  },
+
+  "analysis": {
+    "temp_scan": false,
+    "temp_range": [25, 65, 5],
+    "total_concentration": 1e-6
+  },
+
+  "output": {
+    "format": "json",
+    "include_metadata": true,
+    "precision": 3
+  },
+
+  "defaults": {
+    "sequences": ["ATCGATCGATCG", "CGATCGATCGAT"],
+    "output_file": "results/thermodynamic_analysis.json"
+  }
+}

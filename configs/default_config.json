@@ -1,0 +1,48 @@
+{
+  "_description": "Default configuration for all NUPACK MCP tools",
+  "_version": "1.0.0",
+
+  "global_settings": {
+    "material": "DNA",
+    "temperature": 37.0,
+    "precision": 3
+  },
+
+  "file_paths": {
+    "parameter_files": {
+      "dna": "examples/data/parameters/dna04.json",
+      "rna": "examples/data/parameters/rna99.json"
+    },
+    "output_directory": "results",
+    "examples_directory": "examples/data"
+  },
+
+  "analysis_defaults": {
+    "thermodynamic": {
+      "temp_scan": false,
+      "concentration": 1e-6
+    },
+    "structure": {
+      "energy_gap": 5.0,
+      "max_suboptimal": 10
+    },
+    "design": {
+      "num_designs": 5,
+      "max_attempts": 1000
+    },
+    "equilibrium": {
+      "max_complex_size": 2,
+      "thermal_scan": false
+    },
+    "energy": {
+      "landscape_analysis": false,
+      "sensitivity_analysis": false
+    }
+  },
+
+  "output_settings": {
+    "format": "json",
+    "include_metadata": true,
+    "create_directories": true
+  }
+}
